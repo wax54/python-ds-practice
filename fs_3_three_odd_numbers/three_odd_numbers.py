@@ -13,3 +13,7 @@ def three_odd_numbers(nums):
         >>> three_odd_numbers([1, 2, 3, 3, 2])
         False
     """
+    for n in range(1,len(nums)-2):
+        if (nums[n-1]+nums[n]+nums[n+1])%2 == 1:
+            return True
+    return False

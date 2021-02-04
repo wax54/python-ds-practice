@@ -28,4 +28,8 @@ def is_odd_string(word):
         True
     """
 
-    # Hint: you may find the ord() function useful here
+# Hint: you may find the ord() function useful here
+    sum = 0
+    for l in word:
+        sum += ord(l)
+    return sum % 2 == 1

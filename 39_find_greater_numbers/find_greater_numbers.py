@@ -27,4 +27,3 @@ def find_greater_numbers(nums):
                 tally += 1
         old_nums.append(num)
     return tally
-        
